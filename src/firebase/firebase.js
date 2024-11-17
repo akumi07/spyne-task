@@ -5,7 +5,7 @@ import { getAuth } from "firebase/auth";
 import { getStorage } from 'firebase/storage';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 const firebaseConfig = {
-  apiKey: "AIzaSyBbXZzg88EHdH8ViGSxbnuB7Uk2qMfo-Dw",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "car-management-system-f28a9.firebaseapp.com",
   projectId: "car-management-system-f28a9",
   storageBucket: "car-management-system-f28a9.firebasestorage.app",
