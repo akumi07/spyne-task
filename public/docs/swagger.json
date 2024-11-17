@@ -1,0 +1,56 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Car Management App",
+      "description": "API documentation for Firebase-based Car Management App"
+    },
+    "host": "your-app-domain.com",
+    "basePath": "/api",
+    "schemes": ["https"],
+    "paths": {
+      "/cars": {
+        "get": {
+          "summary": "List Cars",
+          "description": "Retrieve all cars for the logged-in user.",
+          "responses": {
+            "200": {
+              "description": "A list of cars",
+              "schema": { "type": "array", "items": { "$ref": "#/definitions/Car" } }
+            }
+          }
+        }
+      },
+      "/cars/{carId}": {
+        "get": {
+          "summary": "Get Car",
+          "description": "Retrieve details of a specific car.",
+          "parameters": [
+            {
+              "name": "carId",
+              "in": "path",
+              "required": true,
+              "type": "string",
+              "description": "ID of the car"
+            }
+          ],
+          "responses": {
+            "200": { "description": "Car details" }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Car": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "images": { "type": "array", "items": { "type": "string" } },
+          "tags": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+  
