@@ -8,7 +8,7 @@ import Register from './components/Register';
 import ProductListPage from './components/ProductListPage';
 import ProductPreview from './components/ProductPreview';
 import UpdateProductPage from './components/UpdateProductPage';
-import ApiDocs from './components/apiDocs';
+import ApiDocs from './components/ApiDocs';
 
 
 export default function App() {
