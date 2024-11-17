@@ -10,6 +10,7 @@ import ProductPreview from './components/ProductPreview';
 import UpdateProductPage from './components/UpdateProductPage';
 import ApiDocs from './components/apiDocs';
 
+
 export default function App() {
   return (
     <Router>
