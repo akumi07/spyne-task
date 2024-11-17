@@ -1,1 +1,12 @@
-{ "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }] }
+{
+  "routes": [
+    {
+      "src": "/docs/swagger.json",
+      "dest": "/docs/swagger.json"
+    },
+    {
+      "src": "/[^.]+",
+      "dest": "/"
+    }
+  ]
+}
