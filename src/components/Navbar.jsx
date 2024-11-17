@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // For navigation after login/logout
-import { auth } from '../firebase/firebase'; // Import Firebase auth
+import { auth } from "../firebase/firebase"; // Correct import path
+
 import { signOut } from 'firebase/auth'; // Firebase signOut function
 
 export default function Navbar() {
